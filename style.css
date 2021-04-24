@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    width: 100vw;
+    background-color: darkcyan;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 16px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn-div {
+    position: fixed;
+    z-index: 1000;
+    top: 4.5rem;
+    right: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn {
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid darkcyan;
+    background: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+    margin-left: 0.3rem;
+}
+
+.icon {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-div img {
+    height: 40px;
+    width: 40px;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.notes {
+    position: relative;
+    background-color: white;
+    margin: 30px 20px;
+    height: 200px;
+    width: 400px;
+    overflow-y: scroll;
+    margin-top: 2rem;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.notes .operation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem
+}
+
+.notes .operation button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.fa-edit,
+.fa-trash-alt {
+    color: #fff;
+    background-color: mediumseagreen;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-trash-alt {
+    background-color: #e74c3c;
+}
+
+.fa-edit:hover {
+    background-color: #fff;
+    color: mediumseagreen;
+    filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+}
+
+.fa-trash-alt:hover {
+    background-color: #fff;
+    color: #e74c3c;
+    filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+}
+
+.notes textarea {
+    outline: none;
+    border: none;
+    height: 300px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.main {
+    padding: 20px
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.hidden {
+    display: none;
+}
